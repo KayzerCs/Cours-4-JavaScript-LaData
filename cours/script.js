@@ -23,29 +23,58 @@ let objet = {
 };
 //  Pour ce bnalader => console.log(objet.age);
 
-objet.adresse = "22 rue du code"
+objet.adresse = "22 rue du code";
 // console.log(objet);
 // Je vien d'ajouter une news ligne dans l'objet.
 
 let data = [
-    {
-      pseudo: "Denis",
-      age: 33,
-      technos: ["Javascript", "React", "NodeJs"],
-      admin: false,
-    },
-    {
-      pseudo: "Samia",
-      age: 24,
-      technos: ["CSS", "React", "NodeJs"],
-      admin: false,
-    },
-    {
-      pseudo: "Nicolas",
-      age: 42,
-      technos: ["Php", "React", "NodeJs"],
-      admin: true,
-    },
+  {
+    pseudo: "Denis",
+    age: 33,
+    technos: ["Javascript", "React", "NodeJs"],
+    admin: false,
+  },
+  {
+    pseudo: "Samia",
+    age: 24,
+    technos: ["CSS", "React", "NodeJs"],
+    admin: false,
+  },
+  {
+    pseudo: "Nicolas",
+    age: 42,
+    technos: ["Php", "React", "NodeJs"],
+    admin: true,
+  },
 ];
 // console.log(data[2].pseudo);
 
+// **************** Les structures de controle **************** //
+
+if (data[0].age > data[1].age) {
+  // console.log(data[0].pseudo + " est plus agé que " + data[1].pseudo);
+} else {
+  // Valeur si faux
+}
+
+// While
+// While = Temps que
+let w = 0;
+
+while (w < 10) {
+  w++;
+  // console.log(" La valeur de w est de : " + w);
+}
+
+// Do While
+let d = 0;
+
+do {
+  d++;
+  // console.log(d);
+} while (d < 5);
+
+// Les boucles for
+for (const user of data) {
+  document.body.innerHTML += `<li>${user.pseudo} - ${user.age} ans</li>`
+}
