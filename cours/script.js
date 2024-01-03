@@ -7,6 +7,8 @@ let boolean = true;
 let maVariable = null; // Type Undefined
 // console.log(typeof + NomDeMaVariable); Sa va me dire de quel type est ma variable.
 
+// ----------------------------------------------------------------------------------
+
 // Tableaux :
 let array = ["Bordeaux", "Toulouse", "Nantes"];
 // console.log(array) pour connaitre la valeur associer, console.log(array[0]) pour aller chercher un spécifique.
@@ -50,6 +52,8 @@ let data = [
 ];
 // console.log(data[2].pseudo);
 
+// ************************************************************************************
+
 // **************** LES STRUCTURE DE CONTROLE **************** //
 
 if (data[0].age > data[1].age) {
@@ -57,6 +61,8 @@ if (data[0].age > data[1].age) {
 } else {
   // Valeur si faux
 }
+
+// ----------------------------------------------------------------------------------
 
 // While :
 // While = Temps que
@@ -67,6 +73,8 @@ while (w < 10) {
   // console.log(" La valeur de w est de : " + w);
 }
 
+// ----------------------------------------------------------------------------------
+
 // Do While :
 let d = 0;
 
@@ -74,6 +82,8 @@ do {
   d++;
   // console.log(d);
 } while (d < 5);
+
+// ----------------------------------------------------------------------------------
 
 // Les boucles for :
 for (const user of data) {
@@ -89,6 +99,8 @@ for (i = 0; i < data.length; i++) {
 }
 // console.log(data.length);
 // data.length Arrive toujours à savoir la longueur du tableau
+
+// ----------------------------------------------------------------------------------
 
 // Switch :
 document.body.addEventListener("click", (e) => {
@@ -110,6 +122,8 @@ document.body.addEventListener("click", (e) => {
       null;
   }
 });
+
+// ***********************************************************************************
 
 // **************** LES MÉTHODES **************** //
 
@@ -138,3 +152,26 @@ let string2 = "Javascript est un langage orienté objet";
 // console.log(string2.toUpperCase()) => Mettre tout en Majuscule.
 
 // console.log(string2.replace("Javascript", "PHP"));
+
+// ----------------------------------------------------------------------------------
+
+// Méthodes Number :
+
+let number2 = 42.1234;
+let numberString = "42.12 est un chiffre";
+
+// console.log(number2.toFixed(1)); => Supprime à partir de chifffre après la virgule.
+// console.log(parseInt("43"));
+// console.log(parseInt(numberString)); => Garde juste le nombre dans la chaine.
+// console.log(parseFloat(numberString)); => Garde les chiffres après la virgule dans la chaine.
+
+// Math :
+// console.log(Math.PI); => Affiche PI.
+// console.log(Math.round(4.3)); => Arrondit à l'unité la plus proche.
+// console.log(Math.floor(4.9)); => Arrondit à l'unité la plus petite.
+// console.log(Math.ceil(4.1)); => Arrondit à l'unité la plus grande.
+// console.log(Math.pow(2, 7)); => Faire une puissance.
+// console.log(Math.sqrt(16)); => Faire la racine carré
+// console.log(Math.random() * 50); => Pour avoir un nombre en 0 et 50 avec virgule.
+// console.log(Math.floor(Math.random() * 50)); => Pour avoir un nombre en 0 et 50 mais sans la virgule
+
