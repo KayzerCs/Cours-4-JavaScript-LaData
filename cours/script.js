@@ -76,5 +76,35 @@ do {
 
 // Les boucles for
 for (const user of data) {
-  document.body.innerHTML += `<li>${user.pseudo} - ${user.age} ans</li>`
+  // document.body.innerHTML += `<li>${user.pseudo} - ${user.age} ans</li>`
 }
+
+// On déclare la valeur de i / jusqu'ou on boucle / on incrément i si la condition 2 n'est pas remplie
+
+for (i = 0; i < data.length; i++) {
+  // console.log(i);
+  // console.log(data[i].technos[0]);
+  // document.body.innerHTML += "<h2>" + data[i].pseudo + "</h2>";
+}
+// console.log(data.length);
+// data.length Arrive toujours à savoir la longueur du tableau
+
+
+// Switch
+document.body.addEventListener("click", (e) => {
+  // console.log(e.target.id);
+
+  switch (e.target.id) {
+    case "javascript":
+      document.body.style.background = "yellow";
+      break;
+
+    case "php":
+      document.body.style.background = "purple";
+      break;
+
+    case "python":
+      document.body.style.background = "blue";
+      break;
+  }
+});
