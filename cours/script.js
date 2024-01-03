@@ -175,3 +175,61 @@ let numberString = "42.12 est un chiffre";
 // console.log(Math.random() * 50); => Pour avoir un nombre en 0 et 50 avec virgule.
 // console.log(Math.floor(Math.random() * 50)); => Pour avoir un nombre en 0 et 50 mais sans la virgule
 
+// ----------------------------------------------------------------------------------
+
+// Méthodes Arrays :
+
+let array3 = ["Javascript", "Php", "Python"];
+let array4 = ["Ruby", "Solidity"];
+
+// -------------------------------------------------------------
+// Pour concaténer (Fusionner) et rester dans un tableau =>
+
+// PREMIÈRE MÉTHODE :
+// let newArray = array3.concat(array4);
+// console.log(newArray);
+
+// SECONDE MÉTHODES :
+// let newArray = [...array3, ...array4];
+// console.log(newArray);
+// -------------------------------------------------------------
+
+// console.log(array3.join("- & £ $ /")); => Casse le tableau et met moi des tiret ou autres entre les éléments.
+
+// console.log(array3.slice(2)); => Coupe moi les deux premier élément du tableau.
+// console.log(newArray.slice(2, 4)); => Tu me garde ce qui y'a entre le deuxième et le quatrième élément.
+
+// console.log(array3.indexOf("Python")); => Savoir en quel position ce trouve l'élément rechercher.
+
+// array3.forEach((languages) => console.log(languages)); => Pour chaque élément du tableau, représenté par la variable 'languages', la console affiche le langage correspondant.
+
+// console.log(array3.every((language) => language === "Php")); => Savoir si dans chaque éléments de array3 ce trouve "Php" par exemple.
+// console.log(array3.some((language) => language === "Php")); => Savoir si quelque part dans ce tableau ce trouve "Php" par exemple.
+
+// let shift = array3.shift(); => Permet dans d'enlever le premier élément du tableau.
+// console.log(array3);
+// console.log(array3.pop()); => Permet dans d'enlever le dernier élément du tableau.
+
+// const restArray = array.splice(0, 2, "C++"); => De 0 à 2 tu me met "C++" à la place.
+// console.log(array3);
+
+// -------------------------------------------------------------
+// IMPORTANT
+
+let arrayNumber = [4, 74, 28, 12, 1];
+// console.log(arrayNumber.reduce((x, y) => x + y)); => On veut que nos éléments soit  ajoutez les uns avec les autres en termes Mathématique : (+) (-) (*) (/).
+// arrayNumber.push("Chiffre"); => Ajoutez un élément au tableau.
+// console.log(arrayNumber);
+
+// FILTER, SORT, MAP
+// console.log(arrayNumber.filter((number) => number > 10)); => Filtre moi les élément que j'ai appelé (number) et tu va me donner les éléments qui sont plus grand que 10.
+
+// console.log(arrayNumber.sort());
+// console.log(arrayNumber.sort((a, b) => b - a)); => La sa me donne du plus GRAND au plus PETIT.
+
+//  Avec sa on peut tout énumeré à l'écrant.
+// document.body.innerHTML = arrayNumber
+//   .map((number) => `<li> ${number} </li>`)
+//   .join(""); 
+
+// -------------------------------------------------------------
