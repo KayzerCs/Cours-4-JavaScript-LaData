@@ -242,10 +242,66 @@ let arrayNumber = [4, 74, 28, 12, 1];
 //     (user) =>
 //     `
 //       <div class="user-card">
-//         <h2>${user.pseudo}</h2> 
+//         <h2>${user.pseudo}</h2>
 //         <p>Age : ${user.age}</p>
 //         <p>Status : ${user.admin ? "Modérateur" : "Membre"}</p>
 //       </div>
 //     `
 //   )
 //   .join("");
+
+// ***********************************************************************************
+
+// **************** LES DATES **************** //
+
+// Dates classique :
+let date = new Date(); // => Donne la date du jours.
+// console.log(date);
+
+// Timestamp :
+// let timestamp = Date.parse(date); => Le nombre de seconde qui ce sont écouler en 01/01/1970 et maintenant.
+// console.log(timestamp);
+
+// IsoString
+let iso = date.toISOString();
+
+const dateParser = (chaine) => {
+  let newDate = new Date(chaine).toLocaleDateString("fr-FR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
+  return newDate;
+};
+
+// console.log(dateParser(date));
+
+// ***********************************************************************************
+
+// **************** LE DESTRUCTURING **************** //
+
+let moreData = {
+  destVar: ["Element 1", "Element 2"],
+};
+
+const { destVar } = moreData;
+
+// console.log(moreData.destVar);
+// console.log(destVar);
+
+let array5 = [70, 80, 90];
+let [x, y, z] = array5;
+// console.log(x);
+// console.log(y);
+// console.log(z);
+
+const dateDestructuring = (chaine) => {
+  let newDate = chaine.split("T")[0];
+  let [y, m, d] = newDate.split("-");
+  return [d, m, y].join("/");
+};
+console.log(dateDestructuring(iso));
+
+// ***********************************************************************************
