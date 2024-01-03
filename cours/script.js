@@ -1,12 +1,13 @@
-// **************** Rappel des types de données **************** //
+// **************** RAPPEL DES TYPES DE DONNÉES **************** //
 
 // Si on met des ("") sa devient une chaine de carractère.
 let string = "chaine";
 let number = 25;
 let boolean = true;
 let maVariable = null; // Type Undefined
+// console.log(typeof + NomDeMaVariable); Sa va me dire de quel type est ma variable.
 
-// Tableaux
+// Tableaux :
 let array = ["Bordeaux", "Toulouse", "Nantes"];
 // console.log(array) pour connaitre la valeur associer, console.log(array[0]) pour aller chercher un spécifique.
 // Si je veut me balader sur la lettre "d" de bordeaux => console.log(array[0][3]).
@@ -49,7 +50,7 @@ let data = [
 ];
 // console.log(data[2].pseudo);
 
-// **************** Les structures de controle **************** //
+// **************** LES STRUCTURE DE CONTROLE **************** //
 
 if (data[0].age > data[1].age) {
   // console.log(data[0].pseudo + " est plus agé que " + data[1].pseudo);
@@ -57,7 +58,7 @@ if (data[0].age > data[1].age) {
   // Valeur si faux
 }
 
-// While
+// While :
 // While = Temps que
 let w = 0;
 
@@ -66,7 +67,7 @@ while (w < 10) {
   // console.log(" La valeur de w est de : " + w);
 }
 
-// Do While
+// Do While :
 let d = 0;
 
 do {
@@ -74,7 +75,7 @@ do {
   // console.log(d);
 } while (d < 5);
 
-// Les boucles for
+// Les boucles for :
 for (const user of data) {
   // document.body.innerHTML += `<li>${user.pseudo} - ${user.age} ans</li>`
 }
@@ -89,8 +90,7 @@ for (i = 0; i < data.length; i++) {
 // console.log(data.length);
 // data.length Arrive toujours à savoir la longueur du tableau
 
-
-// Switch
+// Switch :
 document.body.addEventListener("click", (e) => {
   // console.log(e.target.id);
 
@@ -106,5 +106,35 @@ document.body.addEventListener("click", (e) => {
     case "python":
       document.body.style.background = "blue";
       break;
+    default:
+      null;
   }
 });
+
+// **************** LES MÉTHODES **************** //
+
+// Méthodes Strings :
+let string2 = "Javascript est un langage orienté objet";
+
+// console.log(typeof "42");
+// console.log(eval(parseInt("1") + 2));
+// console.log(isNaN(string));
+
+// console.log(string2.length);
+// console.log(string2[string2.length -1]);
+// Pour avoir le dernier caractère de la chaine il faut mettre (-1). Car l'Index commence à 0, alors que la lef comence à 1.
+
+// console.log(string2.indexOf("langage"));
+// indexOf("Mot de la chaine") va me dire a quel chiffre de caractère commence le mot. ( Fonctionne aussi avec juste une lettre de la chaine).
+// Retourne a -1 si il ne connait pas.
+
+// let newString = string2.slice(2); => Commence au deuxième caractère. En coupant les 2 premier.
+// let newString = string2.slice(2, 20); => Commence au deuxième et fini au vingtième. En coupant les 2 premier et ce après 20.
+// console.log(newString);
+
+// console.log(string2.split("i")); => Sert à couper de tel caractère a tel caractère.
+
+// console.log(string2.toLowerCase()); => Mettre tout la chaine en Minuscule.
+// console.log(string2.toUpperCase()) => Mettre tout en Majuscule.
+
+// console.log(string2.replace("Javascript", "PHP"));
