@@ -215,7 +215,6 @@ let array4 = ["Ruby", "Solidity"];
 
 // -------------------------------------------------------------
 // IMPORTANT
-
 let arrayNumber = [4, 74, 28, 12, 1];
 // console.log(arrayNumber.reduce((x, y) => x + y)); => On veut que nos éléments soit  ajoutez les uns avec les autres en termes Mathématique : (+) (-) (*) (/).
 // arrayNumber.push("Chiffre"); => Ajoutez un élément au tableau.
@@ -230,6 +229,23 @@ let arrayNumber = [4, 74, 28, 12, 1];
 //  Avec sa on peut tout énumeré à l'écrant.
 // document.body.innerHTML = arrayNumber
 //   .map((number) => `<li> ${number} </li>`)
-//   .join(""); 
-
+//   .join("");
 // -------------------------------------------------------------
+
+// Méthodes Objects :
+
+// document.body.innerHTML = data
+//   .filter((user) => user.admin === false)
+//   .filter((user) => user.pseudo.includes("i"))
+//   .sort((a, b) => b.age - a.age)
+//   .map(
+//     (user) =>
+//     `
+//       <div class="user-card">
+//         <h2>${user.pseudo}</h2> 
+//         <p>Age : ${user.age}</p>
+//         <p>Status : ${user.admin ? "Modérateur" : "Membre"}</p>
+//       </div>
+//     `
+//   )
+//   .join("");
