@@ -313,3 +313,26 @@ const h3js = document.getElementById("javascript");
 
 const h3 = document.querySelectorAll("h3");
 // h3.forEach((language) => console.log(language.dataset.lang))
+
+// ***********************************************************************************
+
+// **************** LES REGEX **************** //
+
+let mail = "from_scratch33@gmail.com";
+// console.log(mail.search(/from/)); => Savoir si y'a "from" dans mail.
+// console.log(mail.replace(/from/, "de")); => Modifier "from" par "de".
+// console.log(mail.match(/SCratch/i)); => Savoir si y'a "SCratch" dans mail sauf que la on a plus d'ennuie avec les majuscule et les symbols.
+// console.log(mail.match(/[zug]/)); => Trouve tu les lettres (z,u,g) dans mail.
+// console.log(mail.match(/[123]/)); => Trouve tu les chiffres (1,2,3) dans mail.
+
+// Tous les chiffres
+// console.log(mail.match(/\d/)); => Checker si y'a au moins un chiffre qui existe dans mail.
+
+// Toute les lettres
+// console.log(mail.match(/[a-z]/)); => => Checker si y'a au moins une lettre qui existe dans mail.
+
+// console.log(mail.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i));
+
+let separator = 254444444637956;
+
+console.log(separator.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
